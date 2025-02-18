@@ -1,0 +1,1783 @@
+{
+  "accrual_periodicity": "annually",
+  "additional_limitations": "",
+  "citation": "Division of Healthcare Quality Promotion, National Center for Emerging and Zoonotic Infectious Diseases, Centers for Disease Control and Prevention [Distributor: Healthcare-Associated Infections Program, California Department of Public Health]. 2015. MRSA-BSI-SIR-2015-CA-CDPH.xlsx ",
+  "contact_email": "opendata@cdph.ca.gov",
+  "data_collection_tool": "National Healthcare Safety Network (NHSN): http://www.cdc.gov/nhsn/  \r\n\r\nCalifornia specific NHSN reporting guidelines: https://www.cdph.ca.gov/Programs/CHCQ/HAI/Pages/CA_SpecificReportingGuidelines.aspx",
+  "data_license": "Terms of Use",
+  "de_identification_method": "See Healthcare-Associated Infections Report at https://www.cdph.ca.gov/Programs/CHCQ/HAI/Pages/AnnualHAIReports.aspx",
+  "description": "California Health and Safety Code section 1288.55(a)(1) requires general acute care hospitals to report all cases of methicillin-resistant Staphylococcus aureus (MRSA) bloodstream infections (BSI) identified in their facilities to the California Department of Public Health (CDPH). MRSA BSI data are submitted by hospitals to the Centers for Disease Control and Prevention National Healthcare Safety Network (NHSN). \r\n\r\nCDPH downloads California hospital MRSA BSI data from NHSN and analyzes the data to describe prevention progress in an annual public report of healthcare-associated infections. CDPH publishes annual MRSA BSI data reported by each California hospital in the datasets below. \r\n\r\nThe following datasets include the number of MRSA BSI reported by each California hospital in the specified reporting year. Beginning in 2016 for each California hospital, the annual MRSA BSI dataset includes the number of MRSA BSI that were predicted to occur in each hospital based on its specific facility-level characteristics. The observed (reported) number of MRSA BSI are then compared to the predicted number of MRSA BSI in a ratio called the Standardized Infection Ratio or SIR. The SIR is a metric that summarizes an individual hospital’s MRSA BSI prevention progress compared with the national baseline and California state-specific prevention goals. \r\n\r\nThe datasets also include the associated 95% confidence intervals for the SIR and statistical interpretation to show whether MRSA BSI incidence was the same (no different), better (lower) or worse (higher) than the national baseline. Another performance measure in this dataset allows for tracking hospital progress in meeting national HAI reduction goals. Hospitals must have an SIR at or below incremental targets each year to be considered on track.\r\n\r\nDetailed information about the variables included in each dataset are described in the accompanying data dictionaries for the year of interest.\r\n\r\nFor more information about the SIR and NHSN’s statistical models that are used to calculate the predicted number of MRSA BSI for each hospital, please review “NHSN’s Guide to the SIR”: https://www.cdc.gov/nhsn/ps-analysis-resources/index.html \r\n\r\nFor general information about NHSN, surveillance definitions, and reporting requirements for MRSA BSI, please visit: https://www.cdc.gov/nhsn/index.html \r\n\r\nTo link the CDPH facility IDs with those from other Departments, including HCAI, please reference the \"Licensed Facility Cross-Walk\" Open Data table at: https://data.chhs.ca.gov/dataset/licensed-facility-crosswalk.\r\n\r\nFor information about healthcare-associated infection prevention progress in California hospitals and statewide prevention goals, please visit: https://www.cdph.ca.gov/Programs/CHCQ/HAI/Pages/AnnualHAIReports.aspx",
+  "geo_coverage": "California",
+  "geographic_granularity": "county",
+  "keywords": [
+    "antibiotic resistance",
+    "antimicrobial resistance",
+    "bacterial infections",
+    "community hospitals",
+    "cross infection",
+    "delivery of health care",
+    "epidemiology",
+    "healthcare",
+    "hospital infections",
+    "infection control",
+    "methicillin",
+    "microbial antibiotic resistance",
+    "microbial drug resistance",
+    "mrsa",
+    "multi-drug resistance",
+    "multiple drug resistance",
+    "nosocomial infections",
+    "staphylococcus aureus",
+    "surveillance"
+  ],
+  "limitations": "Limitations",
+  "name": "methicillin-resistant-staphylococcus-aureus-mrsa-bloodstream-infections-bsi-in-california-hospitals",
+  "program_web_page": "https://www.cdph.ca.gov/Programs/CHCQ/HAI/Pages/HAIProgramHome.aspx ",
+  "related_resources": "To link the CDPH facility IDs with those from other Departments, like HCAI, please reference the \"Licensed Facility Cross-Walk\" Open Data table at https://data.chhs.ca.gov/dataset/licensed-facility-crosswalk.",
+  "resources": [
+    {
+      "description": "This table shows the January through December 2023 hospital-onset methicillin-resistant Staphylococcus aureus (MRSA) bloodstream infections (BSI) data reported by California hospitals to the Centers for Disease Control and Prevention National Healthcare Safety Network (NHSN). Data were downloaded from NHSN on April 03, 2024.",
+      "format": "CSV",
+      "hash": "9e68f3cd80efa9819077562bef8891d2",
+      "name": "mrsa-bsi-in-hospitals-2023",
+      "path": "mrsa-bsi-in-hospitals-2023.csv",
+      "schema": {
+        "fields": [
+          {
+            "description": "Calendar year, 2023",
+            "name": "Year",
+            "type": "number"
+          },
+          {
+            "description": "California",
+            "name": "State",
+            "type": "string"
+          },
+          {
+            "description": "Healthcare-associated infection (HAI): Methicillin-resistant Staphylococcus aureus bloodstream infection (MRSA BSI)",
+            "name": "HAI",
+            "type": "string"
+          },
+          {
+            "description": "Facility ID is the primary key used to track facility information for all facilities stored in the Electronic Licensing Management System (ELMS) for California Department of Public Health (CDPH) Center of Healthcare Quality, Licensing and Certification Program. ",
+            "name": "Facility_ID",
+            "type": "string"
+          },
+          {
+            "description": "Facility name for California general acute care hospitals (GACHs) reporting to the Centers for Disease Control and Prevention (CDC) National Healthcare Safety Network (NHSN) in calendar year 2023.",
+            "name": "Facility_Name",
+            "type": "string"
+          },
+          {
+            "description": "The name of the California county where the facility is located, derived from COUNTY_CODE in the FACILITY table in ELMS, obtained from the facility's license application form.",
+            "name": "County",
+            "type": "string"
+          },
+          {
+            "description": "California general acute care hospitals (GACHs) are categorized into four major categories consistent with the categories NHSN uses for risk adjustment: 1) Acute Care Hospital, 2) Long-Term Acute Care Hospital, 3) Critical Access Hospital, and 4) Rehabilitation Hospital or Unit",
+            "name": "Hospital_Category_RiskAdjustment",
+            "type": "string"
+          },
+          {
+            "description": "Specific types of California hospitals are  Major Teaching; Pediatric; Community, >250 Beds; Community, 125-250 Beds; Community, <125 Beds; Long-Term Acute Care (LTAC); Critical Access; Free-Standing Rehabilitation; and Rehabilitation Unit. A major teaching hospital is a hospital that has a teaching program for medical students and a post-graduate medical training program. A pediatric hospital is a hospital with inpatients predominantly age 18 years or younger. A community hospital is a CDPH designation for hospitals not classified as major teaching, long-term acute care (LTAC), critical access, pediatric, or rehabilitation. Community hospitals are further categorized by number of active beds as reported by the hospital in the NHSN Annual Survey. A LTAC hospital is defined by the Centers for Medicare & Medicaid Services (CMS) as a licensed general acute care hospital providing care for patients with medically complex conditions requiring an average length of stay greater than 25 days. A critical access hospital is designated by CMS as a hospital with 25 or fewer acute care inpatient beds, located more than 35 miles from another hospital (with some exceptions), with an average length of stay of four days or less. A rehabilitation hospital is an acute care facility exclusively providing evaluation and restoration of function for patients who have lost function due to acute or chronic pain, musculoskeletal problems, stroke, or catastrophic events resulting in complete or partial paralysis. A rehabilitation unit is an inpatient ward within a general acute care hospital providing evaluation and restoration of function for patients who have lost function due to acute or chronic pain, musculoskeletal problems, stroke, or catastrophic events resulting in complete or partial paralysis. A rehabilitation unit typically has its own unique CMS certification number (CCN) and reports separately from the rest of the hospital.",
+            "name": "Hospital_Type",
+            "type": "string"
+          },
+          {
+            "description": "Count of hospital onset (HO) MRSA BSIs based on a blood specimen collected more than three days after admission to the facility (i.e., on or after day 4), excluding inpatient rehabilitation facilities (IRFs) and inpatient psychiatric facilities (IPFs) with their own CCN numbers. A rehabilitation unit (IRF) with its own CCN number reports separately from the rest of the hospital.  The \"NHSN Patient Safety Component Manual\" document contains the specific criteria for an HAI such as MRSA BSI, and provides examples of how to apply the HAI definition; See the NHSN website: http://www.cdc.gov/nhsn.",
+            "name": "Infections_Reported",
+            "type": "number"
+          },
+          {
+            "description": "The predicted (expected) number of HO MRSA BSI  based on the 2015 national baseline data, adjusting for significant risk factors.  See the Guide to the SIR at the NHSN website: https://www.cdc.gov/nhsn/pdfs/ps-analysis-resources/nhsn-sir-guide.pdf.",
+            "name": "Infections_Predicted",
+            "type": "number"
+          },
+          {
+            "description": "A count of the number of patients in the hospital during a time period, excluding  IRFs and IPFs with their own CCN numbers.  A rehabilitation unit (IRF) with its own CCN number reports separately from the rest of the hospital. To calculate patient days, the number of patients is recorded at the same time each day for each day of the month.  At the end of the month, the daily counts are summed.  See the NHSN website: http://www.cdc.gov/nhsn.",
+            "name": "Patient_Days",
+            "type": "number"
+          },
+          {
+            "description": "The standardized infection ratio (SIR) is a summary measure used to track HAIs over time. The SIR compares the number of reported HO MRSA BSI to the number of predicted HO MRSA BSI  based on national baseline data. The SIR adjusts for several factors that may impact the risk of acquiring HO MRSA BSI.  NHSN does not calculate a SIR for hospitals with a predicted number of MRSA BSI <1.  CDPH calculated a SIR if the predicted number of infections was <1 and >=0.2; such SIRs and  comparisons are not as precise as SIRs based on a larger number of predicted infections.   NOTE: This 2023 report uses 2015 risk adjustment models and national baseline released by NHSN in 2016.  See the NHSN Guide to the SIR: https://www.cdc.gov/nhsn/pdfs/ps-analysis-resources/nhsn-sir-guide.pdf",
+            "name": "SIR",
+            "type": "number"
+          },
+          {
+            "description": "Lower limit of the SIR 95% confidence interval calculated using exact Poisson distribution. The confidence interval quantifies the precision of the calculated SIR that is associated with random variation. NOTE:  If the 95% CI for the SIR includes 1, the number of reported infections is not statistically different from that predicted.",
+            "name": "SIR_CI_95_Lower_Limit",
+            "type": "number"
+          },
+          {
+            "description": "Upper limit of the SIR 95% confidence interval calculated using exact Poisson distribution. The confidence interval quantifies the precision of the calculated SIR that is associated with random variation. NOTE:  If the 95% CI for the SIR includes 1, the number of reported infections is not statistically different from that predicted.",
+            "name": "SIR_CI_95_Upper_Limit",
+            "type": "number"
+          },
+          {
+            "description": "The calculated SIR 95% confidence interval can be used to determine if the observed number of infections was significantly different than the predicted number of infections. Based on the SIR 95% confidence interval, we labeled each SIR as indicating: 'Better' (fewer observed infections than predicted), 'Same' (no significant difference in the number of observed and predicted infections), 'Worse' (more observed infections than predicted) . This field is blank if SIRs  the predicted number of infections was <0.2.",
+            "name": "Comparison",
+            "type": "string"
+          },
+          {
+            "description": "Yes indicates hospital met the 2020 national HAI reduction goal, as recommended by the CDPH HAI Advisory Committee, in calendar year of 2023. From 2015, hospitals should have achieved 50% reduction in MRSA BSI incidence (SIR<0.50).",
+            "name": "Met_2020_Goal",
+            "type": "string"
+          },
+          {
+            "description": "California hospitals are required to report data throughout each calendar year on a quarterly basis.  NHSN data are downloaded in monthly units.  This field indicates the number of months for which a hospital reported \"complete\" data, defined as a numerator (MRSA BSI cases or zero MRSA BSI) and a denominator (facility-wide inpatient days).",
+            "name": "Months",
+            "type": "number"
+          },
+          {
+            "description": "The 2015 standardized infection ratio (SIR) is a summary measure used to track HAIs over time. The SIR compares the number of reported HO MRSA BSI to the number of predicted HO MRSA BSI  based on national baseline data. The SIR adjusts for several factors that may impact the risk of acquiring HO MRSA BSI.  NHSN does not calculate an SIR for hospitals with a predicted number of HO MRSA BSI  <1.  CDPH calculated an SIR if the predicted number of infections was <1 and >=0.2; such SIRs and  comparisons are not as precise as SIRs based on a larger number of predicted infections.   NOTE: This 2023 report uses 2015 risk adjustment models and national baseline released by NHSN in 2016.  See the NHSN Guide to the SIR: https://www.cdc.gov/nhsn/pdfs/ps-analysis-resources/nhsn-sir-guide.pdf",
+            "name": "SIR_2015",
+            "type": "number"
+          },
+          {
+            "description": "\"A hospital labeled \"Incomplete Reporter\" is a hospital reporting in-plan MRSA data for fewer months than it was operational. See the Patient Safety Monthly Reporting Plan and Annual Surveys document\r\n(https://www.cdc.gov/nhsn/pdfs/pscmanual/3psc_monthlyreportingplancurrent.pdf) for NHSN's monthly reporting plan definitions.\"\r\n\r\n¥ SIR was calculated by CDPH if the predicted number of infections was <1 and >=0.2. The SIR and its comparison are not as precise as SIRs based on a larger number of predicted infections.",
+            "name": "Notes",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/a345bba7-25ed-4019-b6e3-0b597bea7368/resource/15c4962f-e357-4b03-9d24-655a2bc8030c/download/mrsa_bsi_odp_2023.csv",
+          "title": "MRSA BSI in Hospitals, 2023"
+        }
+      ],
+      "title": "MRSA BSI in Hospitals, 2023"
+    },
+    {
+      "description": "This table shows the January through December 2022 hospital-onset methicillin-resistant Staphylococcus aureus (MRSA) bloodstream infections (BSI) data reported by California hospitals to the Centers for Disease Control and Prevention National Healthcare Safety Network (NHSN). Data were downloaded from NHSN on April 01, 2023.",
+      "format": "CSV",
+      "hash": "7f52acc2544462438f87dff1ae1ebaff",
+      "name": "mrsa-bsi-in-hospitals-2022",
+      "path": "mrsa-bsi-in-hospitals-2022.csv",
+      "schema": {
+        "fields": [
+          {
+            "description": "Calendar year, 2022",
+            "name": "Year",
+            "type": "number"
+          },
+          {
+            "description": "California",
+            "name": "State",
+            "type": "string"
+          },
+          {
+            "description": "Healthcare-associated infection (HAI): Methicillin-resistant Staphylococcus aureus bloodstream infection (MRSA BSI)",
+            "name": "HAI",
+            "type": "string"
+          },
+          {
+            "description": "Facility ID is the primary key used to track facility information for all facilities stored in the Electronic Licensing Management System (ELMS) for California Department of Public Health (CDPH) Center of Healthcare Quality, Licensing and Certification Program. ",
+            "name": "Facility_ID",
+            "type": "string"
+          },
+          {
+            "description": "Facility name for California general acute care hospitals (GACHs) reporting to the Centers for Disease Control and Prevention (CDC) National Healthcare Safety Network (NHSN) in calendar year 2022.",
+            "name": "Facility_Name",
+            "type": "string"
+          },
+          {
+            "description": "The name of the California county where the facility is located, derived from COUNTY_CODE in the FACILITY table in ELMS, obtained from the facility's license application form.",
+            "name": "County",
+            "type": "string"
+          },
+          {
+            "description": "California general acute care hospitals (GACHs) are categorized into four major categories consistent with the categories NHSN uses for risk adjustment: 1) Acute Care Hospital, 2) Long-Term Acute Care Hospital, 3) Critical Access Hospital, and 4) Rehabilitation Hospital or Unit",
+            "name": "Hospital_Category_RiskAdjustment",
+            "type": "string"
+          },
+          {
+            "description": "Specific types of California hospitals are  Major Teaching; Pediatric; Community, >250 Beds; Community, 125-250 Beds; Community, <125 Beds; Long-Term Acute Care (LTAC); Critical Access; Free-Standing Rehabilitation; and Rehabilitation Unit. A major teaching hospital is a hospital that has a teaching program for medical students and a post-graduate medical training program. A pediatric hospital is a hospital with inpatients predominantly age 18 years or younger. A community hospital is a CDPH designation for hospitals not classified as major teaching, long-term acute care (LTAC), critical access, pediatric, or rehabilitation. Community hospitals are further categorized by number of active beds as reported by the hospital in the NHSN Annual Survey. A LTAC hospital is defined by the Centers for Medicare & Medicaid Services (CMS) as a licensed general acute care hospital providing care for patients with medically complex conditions requiring an average length of stay greater than 25 days. A critical access hospital is designated by CMS as a hospital with 25 or fewer acute care inpatient beds, located more than 35 miles from another hospital (with some exceptions), with an average length of stay of four days or less. A rehabilitation hospital is an acute care facility exclusively providing evaluation and restoration of function for patients who have lost function due to acute or chronic pain, musculoskeletal problems, stroke, or catastrophic events resulting in complete or partial paralysis. A rehabilitation unit is an inpatient ward within a general acute care hospital providing evaluation and restoration of function for patients who have lost function due to acute or chronic pain, musculoskeletal problems, stroke, or catastrophic events resulting in complete or partial paralysis. A rehabilitation unit typically has its own unique CMS certification number (CCN) and reports separately from the rest of the hospital.",
+            "name": "Hospital_Type",
+            "type": "string"
+          },
+          {
+            "description": "Count of hospital onset (HO) MRSA BSIs based on a blood specimen collected more than three days after admission to the facility (i.e., on or after day 4), excluding inpatient rehabilitation facilities (IRFs) and inpatient psychiatric facilities (IPFs) with their own CCN numbers. A rehabilitation unit (IRF) with its own CCN number reports separately from the rest of the hospital.  The \"NHSN Patient Safety Component Manual\" document contains the specific criteria for an HAI such as MRSA BSI, and provides examples of how to apply the HAI definition; See the NHSN website: http://www.cdc.gov/nhsn.",
+            "name": "Infections_Reported",
+            "type": "number"
+          },
+          {
+            "description": "The predicted (expected) number of HO MRSA BSI  based on the 2015 national baseline data, adjusting for significant risk factors.  See the Guide to the SIR at the NHSN website: https://www.cdc.gov/nhsn/pdfs/ps-analysis-resources/nhsn-sir-guide.pdf.",
+            "name": "Infections_Predicted",
+            "type": "number"
+          },
+          {
+            "description": "A count of the number of patients in the hospital during a time period, excluding  IRFs and IPFs with their own CCN numbers.  A rehabilitation unit (IRF) with its own CCN number reports separately from the rest of the hospital. To calculate patient days, the number of patients is recorded at the same time each day for each day of the month.  At the end of the month, the daily counts are summed.  See the NHSN website: http://www.cdc.gov/nhsn.",
+            "name": "Patient_Days",
+            "type": "number"
+          },
+          {
+            "description": "The standardized infection ratio (SIR) is a summary measure used to track HAIs over time. The SIR compares the number of reported HO MRSA BSI to the number of predicted HO MRSA BSI  based on national baseline data. The SIR adjusts for several factors that may impact the risk of acquiring HO MRSA BSI.  NHSN does not calculate a SIR for hospitals with a predicted number of MRSA BSI <1.  CDPH calculated a SIR if the predicted number of infections was <1 and >=0.2; such SIRs and  comparisons are not as precise as SIRs based on a larger number of predicted infections.   NOTE: This 2022 report uses 2015 risk adjustment models and national baseline released by NHSN in 2016.  See the NHSN Guide to the SIR: https://www.cdc.gov/nhsn/pdfs/ps-analysis-resources/nhsn-sir-guide.pdf",
+            "name": "SIR",
+            "type": "number"
+          },
+          {
+            "description": "Lower limit of the SIR 95% confidence interval calculated using exact Poisson distribution. The confidence interval quantifies the precision of the calculated SIR that is associated with random variation. NOTE:  If the 95% CI for the SIR includes 1, the number of reported infections is not statistically different from that predicted.",
+            "name": "SIR_CI_95_Lower_Limit",
+            "type": "number"
+          },
+          {
+            "description": "Upper limit of the SIR 95% confidence interval calculated using exact Poisson distribution. The confidence interval quantifies the precision of the calculated SIR that is associated with random variation. NOTE:  If the 95% CI for the SIR includes 1, the number of reported infections is not statistically different from that predicted.",
+            "name": "SIR_CI_95_Upper_Limit",
+            "type": "number"
+          },
+          {
+            "description": "The calculated SIR 95% confidence interval can be used to determine if the observed number of infections was significantly different than the predicted number of infections. Based on the SIR 95% confidence interval, we labeled each SIR as indicating: 'Better' (fewer observed infections than predicted), 'Same' (no significant difference in the number of observed and predicted infections), 'Worse' (more observed infections than predicted) . This field is blank if SIRs  the predicted number of infections was <0.2.",
+            "name": "Comparison",
+            "type": "string"
+          },
+          {
+            "description": "Yes indicates hospital met the 2020 national HAI reduction goal, as recommended by the CDPH HAI Advisory Committee, in calendar year of 2022. From 2015, hospitals should have achieved 50% reduction in MRSA BSI incidence (SIR<0.50).",
+            "name": "Met_2020_Goal",
+            "type": "string"
+          },
+          {
+            "description": "California hospitals are required to report data throughout each calendar year on a quarterly basis.  NHSN data are downloaded in monthly units.  This field indicates the number of months for which a hospital reported \"complete\" data, defined as a numerator (MRSA BSI cases or zero MRSA BSI) and a denominator (facility-wide inpatient days).",
+            "name": "Months",
+            "type": "number"
+          },
+          {
+            "description": "The 2015 standardized infection ratio (SIR) is a summary measure used to track HAIs over time. The SIR compares the number of reported HO MRSA BSI to the number of predicted HO MRSA BSI  based on national baseline data. The SIR adjusts for several factors that may impact the risk of acquiring HO MRSA BSI.  NHSN does not calculate an SIR for hospitals with a predicted number of HO MRSA BSI  <1.  CDPH calculated an SIR if the predicted number of infections was <1 and >=0.2; such SIRs and  comparisons are not as precise as SIRs based on a larger number of predicted infections.   NOTE: This 2022 report uses 2015 risk adjustment models and national baseline released by NHSN in 2016.  See the NHSN Guide to the SIR: https://www.cdc.gov/nhsn/pdfs/ps-analysis-resources/nhsn-sir-guide.pdf",
+            "name": "SIR_2015",
+            "type": "number"
+          },
+          {
+            "description": "\"A hospital labeled \"Incomplete Reporter\" is a hospital reporting in-plan MRSA data for fewer months than it was operational. See the Patient Safety Monthly Reporting Plan and Annual Surveys document\r\n(https://www.cdc.gov/nhsn/pdfs/pscmanual/3psc_monthlyreportingplancurrent.pdf) for NHSN's monthly reporting plan definitions.\"\r\n\r\n¥ SIR was calculated by CDPH if the predicted number of infections was <1 and >=0.2. The SIR and its comparison are not as precise as SIRs based on a larger number of predicted infections.",
+            "name": "Notes",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/a345bba7-25ed-4019-b6e3-0b597bea7368/resource/3ff809c6-c1e2-4107-be0c-f976521aadb2/download/mrsa_bsi_odp_2022.csv",
+          "title": "MRSA BSI in Hospitals, 2022"
+        }
+      ],
+      "title": "MRSA BSI in Hospitals, 2022"
+    },
+    {
+      "description": "This table shows the January through December 2021 hospital-onset methicillin-resistant Staphylococcus aureus (MRSA) bloodstream infections (BSI) data reported by California hospitals to the Centers for Disease Control and Prevention National Healthcare Safety Network (NHSN). Data were downloaded from NHSN on March 28, 2022.",
+      "format": "CSV",
+      "hash": "270b736d51acab00ee191c8dfc58ef36",
+      "name": "mrsa-bsi-in-hospitals-2021",
+      "path": "mrsa-bsi-in-hospitals-2021.csv",
+      "schema": {
+        "fields": [
+          {
+            "description": "Calendar year, 2021",
+            "name": "Year",
+            "type": "number"
+          },
+          {
+            "description": "California",
+            "name": "State",
+            "type": "string"
+          },
+          {
+            "description": "Healthcare-associated infection (HAI): Methicillin-resistant Staphylococcus aureus bloodstream infection (MRSA BSI)",
+            "name": "HAI",
+            "type": "string"
+          },
+          {
+            "description": "Facility ID is the primary key used to track facility information for all facilities stored in the Electronic Licensing Management System (ELMS) for California Department of Public Health (CDPH) Center of Healthcare Quality, Licensing and Certification Program. ",
+            "name": "Facility_ID",
+            "type": "string"
+          },
+          {
+            "description": "Facility name for California general acute care hospitals (GACHs) reporting to the Centers for Disease Control and Prevention (CDC) National Healthcare Safety Network (NHSN) in calendar year 2019.  ",
+            "name": "Facility_Name",
+            "type": "string"
+          },
+          {
+            "description": "The name of the California county where the facility is located, derived from COUNTY_CODE in the FACILITY table in ELMS, obtained from the facility's license application form.",
+            "name": "County",
+            "type": "string"
+          },
+          {
+            "description": "California general acute care hospitals (GACHs) are categorized into four major categories consistent with the categories NHSN uses for risk adjustment: 1) Acute Care Hospital, 2) Long-Term Acute Care Hospital, 3) Critical Access Hospital, and 4) Rehabilitation Hospital or Unit",
+            "name": "Hospital_Category_RiskAdjustment",
+            "type": "string"
+          },
+          {
+            "description": "Specific types of California hospitals are  Major Teaching; Pediatric; Community, >250 Beds; Community, 125-250 Beds; Community, <125 Beds; Long-Term Acute Care (LTAC); Critical Access; Free-Standing Rehabilitation; and Rehabilitation Unit. A major teaching hospital is a hospital that has a teaching program for medical students and a post-graduate medical training program. A pediatric hospital is a hospital with inpatients predominantly age 18 years or younger. A community hospital is a CDPH designation for hospitals not classified as major teaching, long-term acute care (LTAC), critical access, pediatric, or rehabilitation. Community hospitals are further categorized by number of active beds as reported by the hospital in the NHSN Annual Survey. A LTAC hospital is defined by the Centers for Medicare & Medicaid Services (CMS) as a licensed general acute care hospital providing care for patients with medically complex conditions requiring an average length of stay greater than 25 days. A critical access hospital is designated by CMS as a hospital with 25 or fewer acute care inpatient beds, located more than 35 miles from another hospital (with some exceptions), with an average length of stay of four days or less. A rehabilitation hospital is an acute care facility exclusively providing evaluation and restoration of function for patients who have lost function due to acute or chronic pain, musculoskeletal problems, stroke, or catastrophic events resulting in complete or partial paralysis. A rehabilitation unit is an inpatient ward within a general acute care hospital providing evaluation and restoration of function for patients who have lost function due to acute or chronic pain, musculoskeletal problems, stroke, or catastrophic events resulting in complete or partial paralysis. A rehabilitation unit typically has its own unique CMS certification number (CCN) and reports separately from the rest of the hospital. ",
+            "name": "Hospital_Type",
+            "type": "string"
+          },
+          {
+            "description": "Count of hospital onset (HO) MRSA BSIs based on a blood specimen collected more than three days after admission to the facility (i.e., on or after day 4), excluding inpatient rehabilitation facilities (IRFs) and inpatient psychiatric facilities (IPFs) with their own CCN numbers. A rehabilitation unit (IRF) with its own CCN number reports separately from the rest of the hospital.  The \"NHSN Patient Safety Component Manual\" document contains the specific criteria for an HAI such as MRSA BSI, and provides examples of how to apply the HAI definition; See the NHSN website: http://www.cdc.gov/nhsn. ",
+            "name": "Infections_Reported",
+            "type": "number"
+          },
+          {
+            "description": "The predicted (expected) number of HO MRSA BSI  based on the 2015 national baseline data, adjusting for significant risk factors.  See the Guide to the SIR at the NHSN website: https://www.cdc.gov/nhsn/pdfs/ps-analysis-resources/nhsn-sir-guide.pdf. ",
+            "name": "Infections_Predicted",
+            "type": "number"
+          },
+          {
+            "description": "A count of the number of patients in the hospital during a time period, excluding  IRFs and IPFs with their own CCN numbers.  A rehabilitation unit (IRF) with its own CCN number reports separately from the rest of the hospital. To calculate patient days, the number of patients is recorded at the same time each day for each day of the month.  At the end of the month, the daily counts are summed.  See the NHSN website: http://www.cdc.gov/nhsn.",
+            "name": "Patient_Days",
+            "type": "number"
+          },
+          {
+            "description": "The standardized infection ratio (SIR) is a summary measure used to track HAIs over time. The SIR compares the number of reported HO MRSA BSI to the number of predicted HO MRSA BSI  based on national baseline data. The SIR adjusts for several factors that may impact the risk of acquiring HO MRSA BSI.  NHSN does not calculate a SIR for hospitals with a predicted number of MRSA BSI <1.  CDPH calculated a SIR if the predicted number of infections was <1 and >=0.2; such SIRs and  comparisons are not as precise as SIRs based on a larger number of predicted infections.   NOTE: This 2019 report uses 2015 risk adjustment models and national baseline released by NHSN in 2016.  See the NHSN Guide to the SIR: https://www.cdc.gov/nhsn/pdfs/ps-analysis-resources/nhsn-sir-guide.pdf",
+            "name": "SIR",
+            "type": "number"
+          },
+          {
+            "description": "Lower limit of the SIR 95% confidence interval calculated using exact Poisson distribution. The confidence interval quantifies the precision of the calculated SIR that is associated with random variation. NOTE:  If the 95% CI for the SIR includes 1, the number of reported infections is not statistically different from that predicted.",
+            "name": "SIR_CI_95_Lower_Limit",
+            "type": "number"
+          },
+          {
+            "description": "Upper limit of the SIR 95% confidence interval calculated using exact Poisson distribution. The confidence interval quantifies the precision of the calculated SIR that is associated with random variation. NOTE:  If the 95% CI for the SIR includes 1, the number of reported infections is not statistically different from that predicted.",
+            "name": "SIR_CI_95_Upper_Limit",
+            "type": "number"
+          },
+          {
+            "description": "The calculated SIR 95% confidence interval can be used to determine if the observed number of infections was significantly different than the predicted number of infections. Based on the SIR 95% confidence interval, we labeled each SIR as indicating: 'Better' (fewer observed infections than predicted), 'Same' (no significant difference in the number of observed and predicted infections), 'Worse' (more observed infections than predicted) . This field is blank if SIRs  the predicted number of infections was <0.2.",
+            "name": "Comparison",
+            "type": "string"
+          },
+          {
+            "description": "Yes indicates hospital met the 2020 national HAI reduction goal, as recommended by the CDPH HAI Advisory Committee, in calendar year of 2021. From 2015, hospitals should have achieved 50% reduction in MRSA BSI incidence (SIR<0.50).   ",
+            "name": "Met_2020_Goal",
+            "type": "string"
+          },
+          {
+            "description": "California hospitals are required to report data throughout each calendar year on a quarterly basis.  NHSN data are downloaded in monthly units.  This field indicates the number of months for which a hospital reported \"complete\" data, defined as a numerator (MRSA BSI cases or zero MRSA BSI) and a denominator (facility-wide inpatient days).",
+            "name": "Months",
+            "type": "number"
+          },
+          {
+            "description": "The 2015 standardized infection ratio (SIR) is a summary measure used to track HAIs over time. The SIR compares the number of reported HO MRSA BSI to the number of predicted HO MRSA BSI  based on national baseline data. The SIR adjusts for several factors that may impact the risk of acquiring HO MRSA BSI.  NHSN does not calculate an SIR for hospitals with a predicted number of HO MRSA BSI  <1.  CDPH calculated an SIR if the predicted number of infections was <1 and >=0.2; such SIRs and  comparisons are not as precise as SIRs based on a larger number of predicted infections.   NOTE: This 2019 report uses 2015 risk adjustment models and national baseline released by NHSN in 2016.  See the NHSN Guide to the SIR: https://www.cdc.gov/nhsn/pdfs/ps-analysis-resources/nhsn-sir-guide.pdf",
+            "name": "SIR_2015",
+            "type": "number"
+          },
+          {
+            "description": " A hospital labeled \"Incomplete Reporter\" is a hospital reporting MRSA BSI data for fewer months than it was operational, and so no SIR was calculated in 2021 or reporting zero patient days for 1 or more month(s) inconsistent with other data.\r\n\r\n ¥ SIR was calculated by CDPH if the predicted number of infections was <1 and >=0.2. The SIR and its comparison are not as precise as SIRs based on a larger number of predicted infections. ",
+            "name": "Notes",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/a345bba7-25ed-4019-b6e3-0b597bea7368/resource/23bef156-ae4d-4800-8512-d29660b2269f/download/cdph_mrsa_bsi_odp_2021.csv",
+          "title": "MRSA BSI in Hospitals, 2021"
+        }
+      ],
+      "title": "MRSA BSI in Hospitals, 2021"
+    },
+    {
+      "description": "This table shows the January through June 2020 hospital-onset methicillin-resistant Staphylococcus aureus (MRSA) bloodstream infections (BSI) data reported by California hospitals to the Centers for Disease Control and Prevention National Healthcare Safety Network (NHSN). Data were downloaded from NHSN on April 1, 2021.",
+      "format": "CSV",
+      "hash": "ff56bef8d8a5037de2d6c91b4c5dd845",
+      "name": "mrsa-bsi-in-january-through-june-2020-updated-annually",
+      "path": "mrsa-bsi-in-january-through-june-2020-updated-annually.csv",
+      "schema": {
+        "fields": [
+          {
+            "description": "First half (January to June) of 2020",
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "description": "California",
+            "name": "State",
+            "type": "string"
+          },
+          {
+            "description": "The name of the California county where the facility is located, derived from COUNTY_CODE in the FACILITY table in ELMS, obtained from the facility's license application form.",
+            "name": "County",
+            "type": "string"
+          },
+          {
+            "description": "Healthcare-associated infection (HAI): Methicillin-resistant Staphylococcus aureus bloodstream infection (MRSA BSI)",
+            "name": "HAI",
+            "type": "string"
+          },
+          {
+            "description": "Facility ID is the primary key used to track facility information for all facilities stored in the Electronic Licensing Management System (ELMS) for California Department of Public Health (CDPH) Center of Healthcare Quality, Licensing and Certification Program. ",
+            "name": "Facility_ID",
+            "type": "string"
+          },
+          {
+            "description": "Facility name for California general acute care hospitals (GACHs) reporting to the Centers for Disease Control and Prevention (CDC) National Healthcare Safety Network (NHSN) in calendar year 2019.  ",
+            "name": "Facility_Name",
+            "type": "string"
+          },
+          {
+            "description": "California general acute care hospitals (GACHs) are categorized into four major categories consistent with the categories NHSN uses for risk adjustment: 1) Acute Care Hospital, 2) Long-Term Acute Care Hospital, 3) Critical Access Hospital, and 4) Rehabilitation Hospital or Unit",
+            "name": "Hospital_Category_RiskAdjustment",
+            "type": "string"
+          },
+          {
+            "description": "Specific types of California hospitals are  Major Teaching; Pediatric; Community, >250 Beds; Community, 125-250 Beds; Community, <125 Beds; Long-Term Acute Care (LTAC); Critical Access; Free-Standing Rehabilitation; and Rehabilitation Unit. A major teaching hospital is a hospital that has a teaching program for medical students and a post-graduate medical training program. A pediatric hospital is a hospital with inpatients predominantly age 18 years or younger. A community hospital is a CDPH designation for hospitals not classified as major teaching, long-term acute care (LTAC), critical access, pediatric, or rehabilitation. Community hospitals are further categorized by number of active beds as reported by the hospital in the NHSN Annual Survey. A LTAC hospital is defined by the Centers for Medicare & Medicaid Services (CMS) as a licensed general acute care hospital providing care for patients with medically complex conditions requiring an average length of stay greater than 25 days. A critical access hospital is designated by CMS as a hospital with 25 or fewer acute care inpatient beds, located more than 35 miles from another hospital (with some exceptions), with an average length of stay of four days or less. A rehabilitation hospital is an acute care facility exclusively providing evaluation and restoration of function for patients who have lost function due to acute or chronic pain, musculoskeletal problems, stroke, or catastrophic events resulting in complete or partial paralysis. A rehabilitation unit is an inpatient ward within a general acute care hospital providing evaluation and restoration of function for patients who have lost function due to acute or chronic pain, musculoskeletal problems, stroke, or catastrophic events resulting in complete or partial paralysis. A rehabilitation unit typically has its own unique CMS certification number (CCN) and reports separately from the rest of the hospital. ",
+            "name": "Facility_Type",
+            "type": "string"
+          },
+          {
+            "description": "Count of hospital onset (HO) MRSA BSIs based on a blood specimen collected more than three days after admission to the facility (i.e., on or after day 4), excluding inpatient rehabilitation facilities (IRFs) and inpatient psychiatric facilities (IPFs) with their own CCN numbers. A rehabilitation unit (IRF) with its own CCN number reports separately from the rest of the hospital.  The \"NHSN Patient Safety Component Manual\" document contains the specific criteria for an HAI such as MRSA BSI, and provides examples of how to apply the HAI definition; See the NHSN website: http://www.cdc.gov/nhsn. ",
+            "name": "Infections_Reported",
+            "type": "string"
+          },
+          {
+            "description": "The predicted (expected) number of HO MRSA BSI  based on the 2015 national baseline data, adjusting for significant risk factors.  See the Guide to the SIR at the NHSN website: https://www.cdc.gov/nhsn/pdfs/ps-analysis-resources/nhsn-sir-guide.pdf. ",
+            "name": "Infections_Predicted",
+            "type": "string"
+          },
+          {
+            "description": "A count of the number of patients in the hospital during a time period, excluding  IRFs and IPFs with their own CCN numbers.  A rehabilitation unit (IRF) with its own CCN number reports separately from the rest of the hospital. To calculate patient days, the number of patients is recorded at the same time each day for each day of the month.  At the end of the month, the daily counts are summed.  See the NHSN website: http://www.cdc.gov/nhsn.",
+            "name": "Patient_Days",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/a345bba7-25ed-4019-b6e3-0b597bea7368/resource/d98421dc-a7a0-443a-857a-815a80e7686e/download/cdph_mrsa_bsi_odp_2020h1.csv",
+          "title": "MRSA BSI in January through June 2020 (updated annually)"
+        }
+      ],
+      "title": "MRSA BSI in January through June 2020 (updated annually)"
+    },
+    {
+      "description": "This table shows the July through December 2020 hospital-onset methicillin-resistant Staphylococcus aureus (MRSA) bloodstream infections (BSI) data reported by California hospitals to the Centers for Disease Control and Prevention National Healthcare Safety Network (NHSN). Data were downloaded from NHSN on April 1, 2021.",
+      "format": "CSV",
+      "hash": "098d700d5901ace39c4b181fb6c0f3b7",
+      "name": "mrsa-bsi-in-july-through-december-2020-updated-annually",
+      "path": "mrsa-bsi-in-july-through-december-2020-updated-annually.csv",
+      "schema": {
+        "fields": [
+          {
+            "description": "Second half (July-December) of 2020",
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "description": "California",
+            "name": "State",
+            "type": "string"
+          },
+          {
+            "description": "The name of the California county where the facility is located, derived from COUNTY_CODE in the FACILITY table in ELMS, obtained from the facility's license application form.",
+            "name": "County",
+            "type": "string"
+          },
+          {
+            "description": "Healthcare-associated infection (HAI): Methicillin-resistant Staphylococcus aureus bloodstream infection (MRSA BSI)",
+            "name": "HAI",
+            "type": "string"
+          },
+          {
+            "description": "Facility ID is the primary key used to track facility information for all facilities stored in the Electronic Licensing Management System (ELMS) for California Department of Public Health (CDPH) Center of Healthcare Quality, Licensing and Certification Program. ",
+            "name": "Facility_ID",
+            "type": "string"
+          },
+          {
+            "description": "Facility name for California general acute care hospitals (GACHs) reporting to the Centers for Disease Control and Prevention (CDC) National Healthcare Safety Network (NHSN) in calendar year 2019.  ",
+            "name": "Facility_Name",
+            "type": "string"
+          },
+          {
+            "description": "California general acute care hospitals (GACHs) are categorized into four major categories consistent with the categories NHSN uses for risk adjustment: 1) Acute Care Hospital, 2) Long-Term Acute Care Hospital, 3) Critical Access Hospital, and 4) Rehabilitation Hospital or Unit",
+            "name": "Hospital_Category_RiskAdjustment",
+            "type": "string"
+          },
+          {
+            "description": "Specific types of California hospitals are  Major Teaching; Pediatric; Community, >250 Beds; Community, 125-250 Beds; Community, <125 Beds; Long-Term Acute Care (LTAC); Critical Access; Free-Standing Rehabilitation; and Rehabilitation Unit. A major teaching hospital is a hospital that has a teaching program for medical students and a post-graduate medical training program. A pediatric hospital is a hospital with inpatients predominantly age 18 years or younger. A community hospital is a CDPH designation for hospitals not classified as major teaching, long-term acute care (LTAC), critical access, pediatric, or rehabilitation. Community hospitals are further categorized by number of active beds as reported by the hospital in the NHSN Annual Survey. A LTAC hospital is defined by the Centers for Medicare & Medicaid Services (CMS) as a licensed general acute care hospital providing care for patients with medically complex conditions requiring an average length of stay greater than 25 days. A critical access hospital is designated by CMS as a hospital with 25 or fewer acute care inpatient beds, located more than 35 miles from another hospital (with some exceptions), with an average length of stay of four days or less. A rehabilitation hospital is an acute care facility exclusively providing evaluation and restoration of function for patients who have lost function due to acute or chronic pain, musculoskeletal problems, stroke, or catastrophic events resulting in complete or partial paralysis. A rehabilitation unit is an inpatient ward within a general acute care hospital providing evaluation and restoration of function for patients who have lost function due to acute or chronic pain, musculoskeletal problems, stroke, or catastrophic events resulting in complete or partial paralysis. A rehabilitation unit typically has its own unique CMS certification number (CCN) and reports separately from the rest of the hospital. ",
+            "name": "Facility_Type",
+            "type": "string"
+          },
+          {
+            "description": "Count of hospital onset (HO) MRSA BSIs based on a blood specimen collected more than three days after admission to the facility (i.e., on or after day 4), excluding inpatient rehabilitation facilities (IRFs) and inpatient psychiatric facilities (IPFs) with their own CCN numbers. A rehabilitation unit (IRF) with its own CCN number reports separately from the rest of the hospital.  The \"NHSN Patient Safety Component Manual\" document contains the specific criteria for an HAI such as MRSA BSI, and provides examples of how to apply the HAI definition; See the NHSN website: http://www.cdc.gov/nhsn. ",
+            "name": "Infections_Reported",
+            "type": "number"
+          },
+          {
+            "description": "The predicted (expected) number of HO MRSA BSI  based on the 2015 national baseline data, adjusting for significant risk factors.  See the Guide to the SIR at the NHSN website: https://www.cdc.gov/nhsn/pdfs/ps-analysis-resources/nhsn-sir-guide.pdf. ",
+            "name": "Infections_Predicted",
+            "type": "number"
+          },
+          {
+            "description": "A count of the number of patients in the hospital during a time period, excluding  IRFs and IPFs with their own CCN numbers.  A rehabilitation unit (IRF) with its own CCN number reports separately from the rest of the hospital. To calculate patient days, the number of patients is recorded at the same time each day for each day of the month.  At the end of the month, the daily counts are summed.  See the NHSN website: http://www.cdc.gov/nhsn.",
+            "name": "Patient_Days",
+            "type": "number"
+          },
+          {
+            "description": "The standardized infection ratio (SIR) is a summary measure used to track HAIs over time. The SIR compares the number of reported HO MRSA BSI to the number of predicted HO MRSA BSI  based on national baseline data. The SIR adjusts for several factors that may impact the risk of acquiring HO MRSA BSI.  NHSN does not calculate a SIR for hospitals with a predicted number of MRSA BSI <1.  CDPH calculated a SIR if the predicted number of infections was <1 and >=0.2; such SIRs and  comparisons are not as precise as SIRs based on a larger number of predicted infections.   NOTE: This 2020 report uses 2015 risk adjustment models and national baseline released by NHSN in 2016.  See the NHSN Guide to the SIR: https://www.cdc.gov/nhsn/pdfs/ps-analysis-resources/nhsn-sir-guide.pdf",
+            "name": "SIR",
+            "type": "number"
+          },
+          {
+            "description": "Lower limit of the SIR 95% confidence interval calculated using exact Poisson distribution. The confidence interval quantifies the precision of the calculated SIR that is associated with random variation. NOTE:  If the 95% CI for the SIR includes 1, the number of reported infections is not statistically different from that predicted.",
+            "name": "SIR_CI_95_Lower_Limit",
+            "type": "number"
+          },
+          {
+            "description": "Upper limit of the SIR 95% confidence interval calculated using exact Poisson distribution. The confidence interval quantifies the precision of the calculated SIR that is associated with random variation. NOTE:  If the 95% CI for the SIR includes 1, the number of reported infections is not statistically different from that predicted.",
+            "name": "SIR_CI_95_Upper_Limit",
+            "type": "number"
+          },
+          {
+            "description": "The calculated SIR 95% confidence interval can be used to determine if the observed number of infections was significantly different than the predicted number of infections. Based on the SIR 95% confidence interval, we labeled each SIR as indicating: 'Better' (fewer observed infections than predicted), 'Same' (no significant difference in the number of observed and predicted infections), 'Worse' (more observed infections than predicted) . This field is blank if SIRs  the predicted number of infections was <0.2.",
+            "name": "Comparison",
+            "type": "string"
+          },
+          {
+            "description": "California hospitals are required to report data throughout each calendar year on a quarterly basis.  NHSN data are downloaded in monthly units.  This field indicates the number of months for which a hospital reported \"complete\" data, defined as a numerator (MRSA BSI cases or zero MRSA BSI) and a denominator (facility-wide inpatient days).",
+            "name": "Months",
+            "type": "number"
+          },
+          {
+            "description": "A hospital labeled \"Incomplete Reporter\" is a hospital reporting  MRSA BSI  data for fewer months than it was operational during quarters 3 and 4 in 2020 or reporting zero patient days for 1 or more month(s) inconsistent with other data.\r\n\r\n ¥ SIR was calculated by CDPH if the predicted number of infections was <1 and >=0.2. The SIR and its comparison are not as precise as SIRs based on a larger number of predicted infections. ",
+            "name": "Notes",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/a345bba7-25ed-4019-b6e3-0b597bea7368/resource/9aac68e7-b122-499d-b834-1ae332cb8499/download/cdph_mrsa_bsi_odp_2020h2.csv",
+          "title": "MRSA BSI in July through December 2020 (updated annually)"
+        }
+      ],
+      "title": "MRSA BSI in July through December 2020 (updated annually)"
+    },
+    {
+      "description": "This table shows the 2019 hospital-onset methicillin-resistant Staphylococcus aureus (MRSA) bloodstream infections (BSI) data reported by California hospitals to the Centers for Disease Control and Prevention National Healthcare Safety Network (NHSN). Data were downloaded from NHSN on February 24, 2020.",
+      "format": "CSV",
+      "hash": "c6bf1db131a25b97953a4375245de994",
+      "name": "mrsa-in-hospitals-2019",
+      "path": "mrsa-in-hospitals-2019.csv",
+      "schema": {
+        "fields": [
+          {
+            "description": "Calendar year, 2019",
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "description": "California",
+            "name": "State",
+            "type": "string"
+          },
+          {
+            "description": "The name of the California county where the facility is located, derived from COUNTY_CODE in the FACILITY table in ELMS, obtained from the facility's license application form.",
+            "name": "County",
+            "type": "string"
+          },
+          {
+            "description": "Healthcare-associated infection (HAI): Methicillin-resistant Staphylococcus aureus bloodstream infection (MRSA BSI)",
+            "name": "HAI",
+            "type": "string"
+          },
+          {
+            "description": "Facility ID is the primary key used to track facility information for all facilities stored in the Electronic Licensing Management System (ELMS) for California Department of Public Health (CDPH) Center of Healthcare Quality, Licensing and Certification Program. ",
+            "name": "Facility_ID",
+            "type": "string"
+          },
+          {
+            "description": "Facility name for California general acute care hospitals (GACHs) reporting to the Centers for Disease Control and Prevention (CDC) National Healthcare Safety Network (NHSN) in calendar year 2019.  ",
+            "name": "Facility_Name",
+            "type": "string"
+          },
+          {
+            "description": "California general acute care hospitals (GACHs) are categorized into four major categories consistent with the categories NHSN uses for risk adjustment: 1) Acute Care Hospital, 2) Long-Term Acute Care Hospital, 3) Critical Access Hospital, and 4) Rehabilitation Hospital or Unit",
+            "name": "Hospital_Category_RiskAdjustment",
+            "type": "string"
+          },
+          {
+            "description": "Specific types of California hospitals are  Major Teaching; Pediatric; Community, >250 Beds; Community, 125-250 Beds; Community, <125 Beds; Long-Term Acute Care (LTAC); Critical Access; Free-Standing Rehabilitation; and Rehabilitation Unit. A major teaching hospital is a hospital that has a teaching program for medical students and a post-graduate medical training program. A pediatric hospital is a hospital with inpatients predominantly age 18 years or younger. A community hospital is a CDPH designation for hospitals not classified as major teaching, long-term acute care (LTAC), critical access, pediatric, or rehabilitation. Community hospitals are further categorized by number of active beds as reported by the hospital in the NHSN Annual Survey. A LTAC hospital is defined by the Centers for Medicare & Medicaid Services (CMS) as a licensed general acute care hospital providing care for patients with medically complex conditions requiring an average length of stay greater than 25 days. A critical access hospital is designated by CMS as a hospital with 25 or fewer acute care inpatient beds, located more than 35 miles from another hospital (with some exceptions), with an average length of stay of four days or less. A rehabilitation hospital is an acute care facility exclusively providing evaluation and restoration of function for patients who have lost function due to acute or chronic pain, musculoskeletal problems, stroke, or catastrophic events resulting in complete or partial paralysis. A rehabilitation unit is an inpatient ward within a general acute care hospital providing evaluation and restoration of function for patients who have lost function due to acute or chronic pain, musculoskeletal problems, stroke, or catastrophic events resulting in complete or partial paralysis. A rehabilitation unit typically has its own unique CMS certification number (CCN) and reports separately from the rest of the hospital. ",
+            "name": "Facility_Type",
+            "type": "string"
+          },
+          {
+            "description": "Count of hospital onset (HO) MRSA BSIs based on a blood specimen collected more than three days after admission to the facility (i.e., on or after day 4), excluding inpatient rehabilitation facilities (IRFs) and inpatient psychiatric facilities (IPFs) with their own CCN numbers. A rehabilitation unit (IRF) with its own CCN number reports separately from the rest of the hospital.  The \"NHSN Patient Safety Component Manual\" document contains the specific criteria for an HAI such as MRSA BSI, and provides examples of how to apply the HAI definition; See the NHSN website: http://www.cdc.gov/nhsn. ",
+            "name": "Infections_Reported",
+            "type": "string"
+          },
+          {
+            "description": "The predicted (expected) number of HO MRSA BSI  based on the 2015 national baseline data, adjusting for significant risk factors.  See the Guide to the SIR at the NHSN website: https://www.cdc.gov/nhsn/pdfs/ps-analysis-resources/nhsn-sir-guide.pdf. ",
+            "name": "Infections_Predicted",
+            "type": "string"
+          },
+          {
+            "description": "A count of the number of patients in the hospital during a time period, excluding  IRFs and IPFs with their own CCN numbers.  A rehabilitation unit (IRF) with its own CCN number reports separately from the rest of the hospital. To calculate patient days, the number of patients is recorded at the same time each day for each day of the month.  At the end of the month, the daily counts are summed.  See the NHSN website: http://www.cdc.gov/nhsn.",
+            "name": "Patient_Days",
+            "type": "string"
+          },
+          {
+            "description": "The standardized infection ratio (SIR) is a summary measure used to track HAIs over time. The SIR compares the number of reported HO MRSA BSI to the number of predicted HO MRSA BSI  based on national baseline data. The SIR adjusts for several factors that may impact the risk of acquiring HO MRSA BSI.  NHSN does not calculate a SIR for hospitals with a predicted number of MRSA BSI <1.  CDPH calculated a SIR if the predicted number of infections was <1 and >=0.2; such SIRs and  comparisons are not as precise as SIRs based on a larger number of predicted infections.   NOTE: This 2019 report uses 2015 risk adjustment models and national baseline released by NHSN in 2016.  See the NHSN Guide to the SIR: https://www.cdc.gov/nhsn/pdfs/ps-analysis-resources/nhsn-sir-guide.pdf",
+            "name": "SIR",
+            "type": "string"
+          },
+          {
+            "description": "Lower limit of the SIR 95% confidence interval calculated using exact Poisson distribution. The confidence interval quantifies the precision of the calculated SIR that is associated with random variation. NOTE:  If the 95% CI for the SIR includes 1, the number of reported infections is not statistically different from that predicted.",
+            "name": "SIR_CI_95_Lower_Limit",
+            "type": "string"
+          },
+          {
+            "description": "Upper limit of the SIR 95% confidence interval calculated using exact Poisson distribution. The confidence interval quantifies the precision of the calculated SIR that is associated with random variation. NOTE:  If the 95% CI for the SIR includes 1, the number of reported infections is not statistically different from that predicted.",
+            "name": "SIR_CI_95_Upper_Limit",
+            "type": "string"
+          },
+          {
+            "description": "The calculated SIR 95% confidence interval can be used to determine if the observed number of infections was significantly different than the predicted number of infections. Based on the SIR 95% confidence interval, we labeled each SIR as indicating: 'Better' (fewer observed infections than predicted), 'Same' (no significant difference in the number of observed and predicted infections), 'Worse' (more observed infections than predicted) . This field is blank if SIRs  the predicted number of infections was <0.2.",
+            "name": "Comparison",
+            "type": "string"
+          },
+          {
+            "description": "CDPH tracks each hospital’s progress in meeting 2020 national HAI reduction goals as recommended by the CDPH HAI Advisory Committee. From 2015 to 2020, hospitals should achieve 50% reduction in MRSA BSI incidence (SIR<0.50).  To be considered on track, hospitals must have SIRs at or below incremental targets each year.  In 2019, hospitals are considered on track if CDI SIR is less than or equal to 0.60.",
+            "name": "On_Track",
+            "type": "string"
+          },
+          {
+            "description": "California hospitals are required to report data throughout each calendar year on a quarterly basis.  NHSN data are downloaded in monthly units.  This field indicates the number of months for which a hospital reported \"complete\" data, defined as a numerator (MRSA BSI cases or zero MRSA BSI) and a denominator (facility-wide inpatient days).",
+            "name": "Months",
+            "type": "string"
+          },
+          {
+            "description": "The 2015 standardized infection ratio (SIR) is a summary measure used to track HAIs over time. The SIR compares the number of reported HO MRSA BSI to the number of predicted HO MRSA BSI  based on national baseline data. The SIR adjusts for several factors that may impact the risk of acquiring HO MRSA BSI.  NHSN does not calculate an SIR for hospitals with a predicted number of HO MRSA BSI  <1.  CDPH calculated an SIR if the predicted number of infections was <1 and >=0.2; such SIRs and  comparisons are not as precise as SIRs based on a larger number of predicted infections.   NOTE: This 2019 report uses 2015 risk adjustment models and national baseline released by NHSN in 2016.  See the NHSN Guide to the SIR: https://www.cdc.gov/nhsn/pdfs/ps-analysis-resources/nhsn-sir-guide.pdf",
+            "name": "SIR_2015",
+            "type": "string"
+          },
+          {
+            "description": " A hospital labeled \"Incomplete Reporter\" is a hospital reporting MRSA BSI data for fewer months than it was operational. No SIR was calculated.\r\n\r\n ¥ SIR was calculated by CDPH if the predicted number of infections was <1 and >=0.2. The SIR and its comparison are not as precise as SIRs based on a larger number of predicted infections. ",
+            "name": "Notes",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/a345bba7-25ed-4019-b6e3-0b597bea7368/resource/62aead61-e320-4a74-b64c-1f65efa72b35/download/cdph_mrsa_bsi_odp_2019.csv",
+          "title": "MRSA in Hospitals, 2019"
+        }
+      ],
+      "title": "MRSA in Hospitals, 2019"
+    },
+    {
+      "description": "This table has data regarding Methicillin-resistant Staphylococcus aureus (MRSA) bloodstream infections (BSI) reported by California hospitals to the Centers for Disease Control and Prevention National Healthcare Safety Network (NHSN). Data were downloaded from NHSN on February, 27 2019.",
+      "format": "CSV",
+      "hash": "1f3f1818c56bc9bf880fd4edcf615e15",
+      "name": "mrsa-in-hospitals-2018",
+      "path": "mrsa-in-hospitals-2018.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "name": "State",
+            "type": "string"
+          },
+          {
+            "name": "HAI",
+            "type": "string"
+          },
+          {
+            "name": "Facility_ID",
+            "type": "string"
+          },
+          {
+            "name": "Facility_Name",
+            "type": "string"
+          },
+          {
+            "name": "County",
+            "type": "string"
+          },
+          {
+            "name": "Hospital_Category_RiskAdjustment",
+            "type": "string"
+          },
+          {
+            "name": "Hospital_Type",
+            "type": "string"
+          },
+          {
+            "name": "Infections_Reported",
+            "type": "string"
+          },
+          {
+            "name": "Infections_Predicted",
+            "type": "string"
+          },
+          {
+            "name": "Patient_Days",
+            "type": "string"
+          },
+          {
+            "name": "SIR",
+            "type": "string"
+          },
+          {
+            "name": "SIR_CI_95_Lower_Limit",
+            "type": "string"
+          },
+          {
+            "name": "SIR_CI_95_Upper_Limit",
+            "type": "string"
+          },
+          {
+            "name": "Comparison",
+            "type": "string"
+          },
+          {
+            "name": "On_Track_Toward_2020_Goal (0.70, 2018)",
+            "type": "string"
+          },
+          {
+            "name": "SIR_2015",
+            "type": "string"
+          },
+          {
+            "name": "Months",
+            "type": "string"
+          },
+          {
+            "name": "Notes",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/a345bba7-25ed-4019-b6e3-0b597bea7368/resource/20f00131-12a0-4551-a2f9-12065b05c2cf/download/cdph_mrsa_bsi_odp_2018.csv",
+          "title": "MRSA in Hospitals, 2018"
+        }
+      ],
+      "title": "MRSA in Hospitals, 2018"
+    },
+    {
+      "description": "Data Dictionary for MRSA in California Hospitals, 2018",
+      "format": "XLSX",
+      "hash": "767cab4023ee87a826ac06e01003d90d",
+      "name": "mrsa-data-dictionary-2018",
+      "path": "mrsa-data-dictionary-2018.xlsx",
+      "schema": {
+        "fields": [
+          {
+            "name": "Field",
+            "type": "string"
+          },
+          {
+            "name": "Format",
+            "type": "string"
+          },
+          {
+            "name": "Definition",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/a345bba7-25ed-4019-b6e3-0b597bea7368/resource/037d46fa-d1cf-4f48-8aa7-09db6463b684/download/mrsa_bsi-sir-2018-datadictionary-ca-cdph.xlsx",
+          "title": "MRSA-Data Dictionary, 2018"
+        }
+      ],
+      "title": "MRSA-Data Dictionary, 2018"
+    },
+    {
+      "description": "This table shows the Center for Disease Control and Prevention (CDC) National Healthcare Safety Network (NHSN) standardized infection ratios (SIR) of hospital onset (HO) methicillin-resistant Staphylococcus aureus bloodstream Infections (MRSA BSI) reported by California general acute care hospitals other than long-term and rehabilitation acute care hospitals.",
+      "format": "CSV",
+      "hash": "0f8d0bb348640605b0c77b6126d3bed1",
+      "name": "mrsa-in-hospitals-2017",
+      "path": "mrsa-in-hospitals-2017.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "name": "State",
+            "type": "string"
+          },
+          {
+            "name": "HAI",
+            "type": "string"
+          },
+          {
+            "name": "Facility_ID",
+            "type": "string"
+          },
+          {
+            "name": "Facility_Name",
+            "type": "string"
+          },
+          {
+            "name": "County",
+            "type": "string"
+          },
+          {
+            "name": "Hospital_Category_RiskAdjustment",
+            "type": "string"
+          },
+          {
+            "name": "Hospital_Type",
+            "type": "string"
+          },
+          {
+            "name": "Infections_Reported",
+            "type": "string"
+          },
+          {
+            "name": "Infections_Predicted",
+            "type": "string"
+          },
+          {
+            "name": "Patient_Days",
+            "type": "string"
+          },
+          {
+            "name": "SIR",
+            "type": "string"
+          },
+          {
+            "name": "SIR_CI_95_Lower_Limit",
+            "type": "string"
+          },
+          {
+            "name": "SIR_CI_95_Upper_Limit",
+            "type": "string"
+          },
+          {
+            "name": "Comparison",
+            "type": "string"
+          },
+          {
+            "name": "SIR_2015",
+            "type": "string"
+          },
+          {
+            "name": "On_Track",
+            "type": "string"
+          },
+          {
+            "name": "Months",
+            "type": "string"
+          },
+          {
+            "name": "Notes",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/a345bba7-25ed-4019-b6e3-0b597bea7368/resource/6f09b0b4-806a-4841-804f-9da529433f0c/download/mrsa_bsi_2017_ca_cdph.csv",
+          "title": "MRSA in Hospitals, 2017"
+        }
+      ],
+      "title": "MRSA in Hospitals, 2017"
+    },
+    {
+      "description": "Data Dictionary for MRSA in Hospitals, 2017",
+      "format": "XLSX",
+      "hash": "f8e0a87a7c74a04cda536888ce682b36",
+      "name": "mrsa-data-dictionary-2017",
+      "path": "mrsa-data-dictionary-2017.xlsx",
+      "schema": {
+        "fields": [
+          {
+            "name": "Field",
+            "type": "string"
+          },
+          {
+            "name": "Format",
+            "type": "string"
+          },
+          {
+            "name": "Definition",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/a345bba7-25ed-4019-b6e3-0b597bea7368/resource/15f3a253-2af5-4132-96e7-40cb1d7eb6c1/download/mrsa_bsi-sir-2017-datadictionary-ca-cdph.xlsx",
+          "title": "MRSA-Data Dictionary, 2017"
+        }
+      ],
+      "title": "MRSA-Data Dictionary, 2017"
+    },
+    {
+      "description": "This table shows the Center for Disease Control and Prevention (CDC) National Healthcare Safety Network (NHSN) standardized infection ratios (SIR) of hospital onset (HO) methicillin-resistant Staphylococcus aureus bloodstream Infections (MRSA BSI) reported by California general acute care hospitals other than long-term and rehabilitation acute care hospitals.",
+      "format": "CSV",
+      "hash": "74ceacf0af75fe06b38502d63fb6cfa7",
+      "name": "mrsa-in-hospitals-2016",
+      "path": "mrsa-in-hospitals-2016.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "name": "State",
+            "type": "string"
+          },
+          {
+            "name": "HAI",
+            "type": "string"
+          },
+          {
+            "name": "Facility_ID",
+            "type": "string"
+          },
+          {
+            "name": "Facility_Name",
+            "type": "string"
+          },
+          {
+            "name": "County",
+            "type": "string"
+          },
+          {
+            "name": "Facility_Category",
+            "type": "string"
+          },
+          {
+            "name": "Facility_Type",
+            "type": "string"
+          },
+          {
+            "name": "Infections_Reported",
+            "type": "string"
+          },
+          {
+            "name": "Infections_Predicted",
+            "type": "string"
+          },
+          {
+            "name": "Patient_Days",
+            "type": "string"
+          },
+          {
+            "name": "SIR",
+            "type": "string"
+          },
+          {
+            "name": "SIR_CI_95_Lower_Limit",
+            "type": "string"
+          },
+          {
+            "name": "SIR_CI_95_Upper_Limit",
+            "type": "string"
+          },
+          {
+            "name": "Comparison",
+            "type": "string"
+          },
+          {
+            "name": "SIR_2015",
+            "type": "string"
+          },
+          {
+            "name": "Notes",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/a345bba7-25ed-4019-b6e3-0b597bea7368/resource/01217122-6605-44c3-9fcd-4f5ad0580da4/download/mrsa-in-hospitals-2016.csv",
+          "title": "MRSA in Hospitals, 2016"
+        }
+      ],
+      "title": "MRSA in Hospitals, 2016"
+    },
+    {
+      "description": "Data Dictionary for MRSA in Hospitals, 2016",
+      "format": "XLSX",
+      "hash": "00b0ae1b548319193fb0c56bd08d4068",
+      "name": "mrsa-data-dictionary-2016",
+      "path": "mrsa-data-dictionary-2016.xlsx",
+      "schema": {
+        "fields": [
+          {
+            "name": "Field",
+            "type": "string"
+          },
+          {
+            "name": "Format",
+            "type": "string"
+          },
+          {
+            "name": "Definition",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/a345bba7-25ed-4019-b6e3-0b597bea7368/resource/d31ad6bc-c480-4c38-b5fc-791d2be551bb/download/mrsabsi-2016-datadictionary.xlsx",
+          "title": "MRSA-Data Dictionary, 2016"
+        }
+      ],
+      "title": "MRSA-Data Dictionary, 2016"
+    },
+    {
+      "description": "This table shows the Center for Disease Control and Prevention (CDC) National Healthcare Safety Network (NHSN) standardized infection ratios (SIR) of hospital onset (HO) methicillin-resistant Staphylococcus aureus bloodstream Infections (MRSA BSI) reported by California general acute care hospitals other than long-term and rehabilitation acute care hospitals. These data are in reference to original national baseline data collected by NHSN (i.e. Baseline 1). For information about Baseline 1 and the 2015 rebaseline for data 2016-present, please refer to https://www.cdc.gov/nhsn/2015rebaseline/index.html",
+      "format": "CSV",
+      "hash": "7cc4fa47bbcc89abfba5a8737b39aa0f",
+      "name": "mrsa-in-hospitals-2015",
+      "path": "mrsa-in-hospitals-2015.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "name": "State",
+            "type": "string"
+          },
+          {
+            "name": "HAI",
+            "type": "string"
+          },
+          {
+            "name": "Facility_ID1",
+            "type": "string"
+          },
+          {
+            "name": "Facility_Name1",
+            "type": "string"
+          },
+          {
+            "name": "County",
+            "type": "string"
+          },
+          {
+            "name": "Hospital_Onset_Cases",
+            "type": "string"
+          },
+          {
+            "name": "Predicted_Cases",
+            "type": "string"
+          },
+          {
+            "name": "Patient_Days",
+            "type": "string"
+          },
+          {
+            "name": "SIR",
+            "type": "string"
+          },
+          {
+            "name": "SIR_CI_95_Lower_Limit",
+            "type": "string"
+          },
+          {
+            "name": "SIR_CI_95_Upper_Limit",
+            "type": "string"
+          },
+          {
+            "name": "Comparison",
+            "type": "string"
+          },
+          {
+            "name": "Notes",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/a345bba7-25ed-4019-b6e3-0b597bea7368/resource/54cd4bd1-6d22-42b6-b224-9d2d91edfa44/download/mrsa-in-hospitals-2015.csv",
+          "title": "MRSA in Hospitals, 2015"
+        }
+      ],
+      "title": "MRSA in Hospitals, 2015"
+    },
+    {
+      "description": "This table shows the Center for Disease Control and Prevention (CDC) National Healthcare Safety Network (NHSN) standardized infection ratios (SIR) of hospital onset (HO) methicillin-resistant Staphylococcus aureus bloodstream Infections (MRSA BSI) reported by California general acute care hospitals other than long-term and rehabilitation acute care hospitals. These data are in reference to original national baseline data collected by NHSN (i.e. Baseline 1). For information about Baseline 1 and the 2015 rebaseline for data 2016-present, please refer to https://www.cdc.gov/nhsn/2015rebaseline/index.html",
+      "format": "CSV",
+      "hash": "4a14b7b52db1cc9f4d5733f45a8d8be5",
+      "name": "mrsa-in-hospitals-2014",
+      "path": "mrsa-in-hospitals-2014.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "name": "State",
+            "type": "string"
+          },
+          {
+            "name": "HAI",
+            "type": "string"
+          },
+          {
+            "name": "Facility_ID1",
+            "type": "string"
+          },
+          {
+            "name": "Facility_Name1",
+            "type": "string"
+          },
+          {
+            "name": "County",
+            "type": "string"
+          },
+          {
+            "name": "Cases",
+            "type": "string"
+          },
+          {
+            "name": "Predicted_Cases",
+            "type": "string"
+          },
+          {
+            "name": "Patient_Days",
+            "type": "string"
+          },
+          {
+            "name": "SIR",
+            "type": "string"
+          },
+          {
+            "name": "SIR_CI_95_Lower_Limit",
+            "type": "string"
+          },
+          {
+            "name": "SIR_CI_95_Upper_Limit",
+            "type": "string"
+          },
+          {
+            "name": "Comparison",
+            "type": "string"
+          },
+          {
+            "name": "Notes",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/a345bba7-25ed-4019-b6e3-0b597bea7368/resource/e1b19ac7-ecb0-4d7f-b2fa-762ab0b58e2b/download/mrsa-in-hospitals-2014.csv",
+          "title": "MRSA in Hospitals, 2014"
+        }
+      ],
+      "title": "MRSA in Hospitals, 2014"
+    },
+    {
+      "description": "This table shows the Center for Disease Control and Prevention (CDC) National Healthcare Safety Network (NHSN) standardized infection ratios (SIR) of hospital onset (HO) methicillin-resistant Staphylococcus aureus bloodstream Infections (MRSA BSI) reported by California general acute care hospitals other than long-term and rehabilitation acute care hospitals. These data are in reference to original national baseline data collected by NHSN (i.e. Baseline 1). For information about Baseline 1 and the 2015 rebaseline for data 2016-present, please refer to https://www.cdc.gov/nhsn/2015rebaseline/index.html",
+      "format": "CSV",
+      "hash": "a4992a48288edce01dd13a11d4569879",
+      "name": "mrsa-in-hospitals-2013",
+      "path": "mrsa-in-hospitals-2013.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "name": "State",
+            "type": "string"
+          },
+          {
+            "name": "HAI",
+            "type": "string"
+          },
+          {
+            "name": "Facility_Name1",
+            "type": "string"
+          },
+          {
+            "name": "Facility_Name2",
+            "type": "string"
+          },
+          {
+            "name": "Facility_Name3",
+            "type": "string"
+          },
+          {
+            "name": "FACID1",
+            "type": "string"
+          },
+          {
+            "name": "FACID2",
+            "type": "string"
+          },
+          {
+            "name": "FACID3",
+            "type": "string"
+          },
+          {
+            "name": "County",
+            "type": "string"
+          },
+          {
+            "name": "Infection_Count",
+            "type": "string"
+          },
+          {
+            "name": "Patient_Days",
+            "type": "string"
+          },
+          {
+            "name": "SIR",
+            "type": "string"
+          },
+          {
+            "name": "SIR_95%_CI_Lower_Limit",
+            "type": "string"
+          },
+          {
+            "name": "SIR_95%_CI_Upper_Limit",
+            "type": "string"
+          },
+          {
+            "name": "Comparison",
+            "type": "string"
+          },
+          {
+            "name": "Notes",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/a345bba7-25ed-4019-b6e3-0b597bea7368/resource/06eba1c9-a67d-4436-a362-9a7eff0284db/download/mrsa-in-hospitals-2013.csv",
+          "title": "MRSA in Hospitals, 2013"
+        }
+      ],
+      "title": "MRSA in Hospitals, 2013"
+    },
+    {
+      "description": "Data Dictionary for MRSA in Hospitals",
+      "format": "XLSX",
+      "hash": "7d8e52f3ff1723fdab10dc0f16284499",
+      "name": "mrsa-in-hospitals-data-dictionary-2013-2015",
+      "path": "mrsa-in-hospitals-data-dictionary-2013-2015.xlsx",
+      "schema": {
+        "fields": [
+          {
+            "name": "Field",
+            "type": "string"
+          },
+          {
+            "name": "Format",
+            "type": "string"
+          },
+          {
+            "name": "Definition",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/a345bba7-25ed-4019-b6e3-0b597bea7368/resource/de3f0386-4351-4ddd-aa21-10a9e6670923/download/mrsa-in-hospitals-data-dictionary.xlsx",
+          "title": "MRSA in Hospitals-Data Dictionary 2013-2015"
+        }
+      ],
+      "title": "MRSA in Hospitals-Data Dictionary 2013-2015"
+    },
+    {
+      "description": "This table shows the incidence rates of hospital onset methicillin-resistant Staphylococcus aureus bloodstream infections (MRSA BSI) reported by California free-standing rehabilitation acute care hospitals and rehabilitation units with their own Centers for Medicare and Medicaid Services certification number (CCN). ",
+      "format": "CSV",
+      "hash": "9ef4080c8de970e410c3ab527e0a3ad4",
+      "name": "mrsa-in-rehabilitation-acute-care-2015",
+      "path": "mrsa-in-rehabilitation-acute-care-2015.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "name": "State",
+            "type": "string"
+          },
+          {
+            "name": "HAI",
+            "type": "string"
+          },
+          {
+            "name": "Facility_ID1",
+            "type": "string"
+          },
+          {
+            "name": "Facility_Name1",
+            "type": "string"
+          },
+          {
+            "name": "County",
+            "type": "string"
+          },
+          {
+            "name": "Hospital_Onset_Cases",
+            "type": "string"
+          },
+          {
+            "name": "Patient_Days",
+            "type": "string"
+          },
+          {
+            "name": "Hospital_Onset_Rate",
+            "type": "string"
+          },
+          {
+            "name": "CI_95_Lower_Limit",
+            "type": "string"
+          },
+          {
+            "name": "CI_95_Upper_Limit",
+            "type": "string"
+          },
+          {
+            "name": "Comparison",
+            "type": "string"
+          },
+          {
+            "name": "Notes",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/a345bba7-25ed-4019-b6e3-0b597bea7368/resource/89ed921d-64e4-44eb-8019-10ef61ab1e01/download/mrsa-in-rehab-facilities-2015.csv",
+          "title": "MRSA in Rehabilitation Acute Care, 2015"
+        }
+      ],
+      "title": "MRSA in Rehabilitation Acute Care, 2015"
+    },
+    {
+      "description": "This table shows the incidence rates of hospital onset methicillin-resistant Staphylococcus aureus bloodstream infections (MRSA BSI) reported by California free-standing rehabilitation acute care hospitals and rehabilitation units with their own Centers for Medicare and Medicaid Services certification number (CCN).",
+      "format": "CSV",
+      "hash": "0eb6d713d5caa21a2c7c9b216f5177c5",
+      "name": "mrsa-in-rehabilitation-acute-care-2014",
+      "path": "mrsa-in-rehabilitation-acute-care-2014.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "name": "State",
+            "type": "string"
+          },
+          {
+            "name": "HAI",
+            "type": "string"
+          },
+          {
+            "name": "Facility_ID1",
+            "type": "string"
+          },
+          {
+            "name": "Facility_Name1",
+            "type": "string"
+          },
+          {
+            "name": "County",
+            "type": "string"
+          },
+          {
+            "name": "Cases",
+            "type": "string"
+          },
+          {
+            "name": "Patient_Days",
+            "type": "string"
+          },
+          {
+            "name": "Incidence_Rate",
+            "type": "string"
+          },
+          {
+            "name": "CI_95_Lower_Limit",
+            "type": "string"
+          },
+          {
+            "name": "CI_95_Upper_Limit",
+            "type": "string"
+          },
+          {
+            "name": "Compared_To_Pooled_Mean_Rate",
+            "type": "string"
+          },
+          {
+            "name": "Notes",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/a345bba7-25ed-4019-b6e3-0b597bea7368/resource/ba6a080b-aa9e-4b8a-b93f-ae9746a41216/download/mrsa-in-rehab-facilities-2014.csv",
+          "title": "MRSA in Rehabilitation Acute Care, 2014"
+        }
+      ],
+      "title": "MRSA in Rehabilitation Acute Care, 2014"
+    },
+    {
+      "description": "This table shows the incidence rates of hospital onset methicillin-resistant Staphylococcus aureus bloodstream infections (MRSA BSI) reported by California free-standing rehabilitation acute care hospitals and rehabilitation units with their own Centers for Medicare and Medicaid Services certification number (CCN). ",
+      "format": "CSV",
+      "hash": "75e9cccc5b83b41a7d6caa58a5e10d76",
+      "name": "mrsa-in-rehabilitation-acute-care-2013",
+      "path": "mrsa-in-rehabilitation-acute-care-2013.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "name": "State",
+            "type": "string"
+          },
+          {
+            "name": "HAI",
+            "type": "string"
+          },
+          {
+            "name": "Facility_Name",
+            "type": "string"
+          },
+          {
+            "name": "FACID",
+            "type": "string"
+          },
+          {
+            "name": "County",
+            "type": "string"
+          },
+          {
+            "name": "Cases",
+            "type": "string"
+          },
+          {
+            "name": "Patient_Days",
+            "type": "string"
+          },
+          {
+            "name": "Incidence_Rate",
+            "type": "string"
+          },
+          {
+            "name": "95%_Confidence_Interval_Lower_Limit",
+            "type": "string"
+          },
+          {
+            "name": "95%_Confidence_Interval_Upper_Limit",
+            "type": "string"
+          },
+          {
+            "name": "Compared_To_Pooled_Mean_Rate",
+            "type": "string"
+          },
+          {
+            "name": "Notes",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/a345bba7-25ed-4019-b6e3-0b597bea7368/resource/89340873-3e4a-4e60-9941-de025fab15d7/download/mrsa-in-rehab-facilities-2013.csv",
+          "title": "MRSA in Rehabilitation Acute Care, 2013"
+        }
+      ],
+      "title": "MRSA in Rehabilitation Acute Care, 2013"
+    },
+    {
+      "format": "XLS",
+      "hash": "262078b444904184b1a635aef427866a",
+      "name": "mrsa-in-rehabilitation-acute-care-data-dictionary-2013-2015",
+      "path": "mrsa-in-rehabilitation-acute-care-data-dictionary-2013-2015.xls",
+      "schema": {
+        "fields": [
+          {
+            "name": "Field",
+            "type": "string"
+          },
+          {
+            "name": "Format",
+            "type": "string"
+          },
+          {
+            "name": "Definition",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/a345bba7-25ed-4019-b6e3-0b597bea7368/resource/5e02386f-c7fc-4424-b272-15c15f274cfc/download/mrsa-in-rehabilitation-acute-care-dd.xlsx",
+          "title": "MRSA in Rehabilitation Acute Care-Data Dictionary 2013-2015"
+        }
+      ],
+      "title": "MRSA in Rehabilitation Acute Care-Data Dictionary 2013-2015"
+    },
+    {
+      "description": "This table shows the incidence rates of hospital onset (HO) methicillin-resistant Staphylococcus aureus bloodstream infections (MRSA BSI) reported by California LTACs to the Centers for Disease Control and Prevention (CDC) National Healthcare Safety Network (NHSN). ",
+      "format": "CSV",
+      "hash": "785a256bbae7ae1a91370892ad320d09",
+      "name": "mrsa-in-long-term-acute-care-2015",
+      "path": "mrsa-in-long-term-acute-care-2015.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "name": "State",
+            "type": "string"
+          },
+          {
+            "name": "HAI",
+            "type": "string"
+          },
+          {
+            "name": "Facility_ID1",
+            "type": "string"
+          },
+          {
+            "name": "Facility_Name1",
+            "type": "string"
+          },
+          {
+            "name": "County",
+            "type": "string"
+          },
+          {
+            "name": "Hospital_Onset_Cases",
+            "type": "string"
+          },
+          {
+            "name": "Patient_Days",
+            "type": "string"
+          },
+          {
+            "name": "Hospital_Onset_Rate",
+            "type": "string"
+          },
+          {
+            "name": "CI_95_Lower_Limit",
+            "type": "string"
+          },
+          {
+            "name": "CI_95_Upper_Limit",
+            "type": "string"
+          },
+          {
+            "name": "Comparison",
+            "type": "string"
+          },
+          {
+            "name": "Notes",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/a345bba7-25ed-4019-b6e3-0b597bea7368/resource/4b057555-9e84-4c73-8791-c4f451c938b0/download/mrsa-in-long-term-acute-care-2015.csv",
+          "title": "MRSA in Long-term Acute Care, 2015"
+        }
+      ],
+      "title": "MRSA in Long-term Acute Care, 2015"
+    },
+    {
+      "description": "This table shows the incidence rates of hospital onset (HO) methicillin-resistant Staphylococcus aureus bloodstream infections (MRSA BSI) reported by California LTACs to the Centers for Disease Control and Prevention (CDC) National Healthcare Safety Network (NHSN). ",
+      "format": "CSV",
+      "hash": "2e6310bcc54e2d806b9b457b6c627ea1",
+      "name": "mrsa-in-long-term-acute-care-2014",
+      "path": "mrsa-in-long-term-acute-care-2014.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "name": "State",
+            "type": "string"
+          },
+          {
+            "name": "HAI",
+            "type": "string"
+          },
+          {
+            "name": "Facility_ID1",
+            "type": "string"
+          },
+          {
+            "name": "Facility_Name1",
+            "type": "string"
+          },
+          {
+            "name": "County",
+            "type": "string"
+          },
+          {
+            "name": "Cases",
+            "type": "string"
+          },
+          {
+            "name": "Patient_Days",
+            "type": "string"
+          },
+          {
+            "name": "Incidence_Rate",
+            "type": "string"
+          },
+          {
+            "name": "CI_95_Lower_Limit",
+            "type": "string"
+          },
+          {
+            "name": "CI_95_Upper_Limit",
+            "type": "string"
+          },
+          {
+            "name": "Compared_To_Pooled_Mean_Rate",
+            "type": "string"
+          },
+          {
+            "name": "Notes",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/a345bba7-25ed-4019-b6e3-0b597bea7368/resource/66064573-54f8-4f23-9fcf-4dabd71c1400/download/mrsa-in-long-term-acute-care-2014.csv",
+          "title": "MRSA in Long-term Acute Care, 2014"
+        }
+      ],
+      "title": "MRSA in Long-term Acute Care, 2014"
+    },
+    {
+      "description": "This table shows the incidence rates of hospital onset (HO) methicillin-resistant Staphylococcus aureus bloodstream infections (MRSA BSI) reported by California LTACs to the Centers for Disease Control and Prevention (CDC) National Healthcare Safety Network (NHSN). ",
+      "format": "CSV",
+      "hash": "1798ff282aec0123d4dccc667a1eacbe",
+      "name": "mrsa-in-long-term-acute-care-2013",
+      "path": "mrsa-in-long-term-acute-care-2013.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "name": "State",
+            "type": "string"
+          },
+          {
+            "name": "HAI",
+            "type": "string"
+          },
+          {
+            "name": "Facility_Name",
+            "type": "string"
+          },
+          {
+            "name": "FACID",
+            "type": "string"
+          },
+          {
+            "name": "County",
+            "type": "string"
+          },
+          {
+            "name": "Cases",
+            "type": "string"
+          },
+          {
+            "name": "Patient_Days",
+            "type": "string"
+          },
+          {
+            "name": "Incidence_Rate",
+            "type": "string"
+          },
+          {
+            "name": "95%_Confidence_Interval_Lower_Limit",
+            "type": "string"
+          },
+          {
+            "name": "95%_Confidence_Interval_Upper_Limit",
+            "type": "string"
+          },
+          {
+            "name": "Compared_To_Pooled_Mean_Rate",
+            "type": "string"
+          },
+          {
+            "name": "Notes",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/a345bba7-25ed-4019-b6e3-0b597bea7368/resource/523799a1-abd9-463f-a60d-f2c797ee72aa/download/mrsa-in-long-term-acute-care-2013.csv",
+          "title": "MRSA in Long-Term Acute Care, 2013"
+        }
+      ],
+      "title": "MRSA in Long-Term Acute Care, 2013"
+    },
+    {
+      "description": "Data Dictionary for MRSA in LTACs",
+      "format": "XLS",
+      "hash": "2dbcac58ea4d3eff9c813aab20a004b5",
+      "name": "mrsa-in-long-term-acute-care-data-dictionary-2013-2015",
+      "path": "mrsa-in-long-term-acute-care-data-dictionary-2013-2015.xls",
+      "schema": {
+        "fields": [
+          {
+            "name": "Field",
+            "type": "string"
+          },
+          {
+            "name": "Format",
+            "type": "string"
+          },
+          {
+            "name": "Definition",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/a345bba7-25ed-4019-b6e3-0b597bea7368/resource/739da389-b22e-462a-a35d-1788040d280c/download/mrsa-in-long-term-acute-care-dd.xlsx",
+          "title": "MRSA in Long-term Acute Care-Data Dictionary 2013-2015"
+        }
+      ],
+      "title": "MRSA in Long-term Acute Care-Data Dictionary 2013-2015"
+    }
+  ],
+  "secondary_sources": "",
+  "sources": [
+    {
+      "name": "Center for Health Care Quality/Healthcare-Associated Infections Program/Epidemiology Unit ",
+      "web": "https://www.cdph.ca.gov/Programs/CHCQ/HAI/Pages/AnnualHAIReports.aspx "
+    }
+  ],
+  "temporal_coverage": "2013 to present",
+  "title": "Methicillin-resistant Staphylococcus aureus (MRSA) bloodstream infections (BSI) in California Hospitals"
+}
